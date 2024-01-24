@@ -18,7 +18,7 @@ function HookCounterTwo() {
   return (
     <div>
       Count: {count}
-      <div className='flex gap-1 mt-1'>
+      <div className='flex flex-wrap gap-1 mt-1'>
         <button onClick={() => setCount(initialCount)}>Reset</button>
         <button onClick={() => setCount(count + 1)}>Increment</button>
         <button onClick={() => setCount(count - 1)}>Decrement</button>

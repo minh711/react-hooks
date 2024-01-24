@@ -3,6 +3,7 @@ import HookCounter from './components/HookCounter'
 
 import './globals.css'
 import HookCounterTwo from './components/HookCounterTwo'
+import HookCounterThree from './components/HookCounterThree'
 
 function App() {
   return (
@@ -33,6 +34,12 @@ function App() {
         <h1>🎈 useState with previous state</h1>
         
         <HookCounterTwo />
+      </div>
+
+      <div className='card'>
+        <h1>📦 useState with object</h1>
+
+        <HookCounterThree />
       </div>
     </>
   )
