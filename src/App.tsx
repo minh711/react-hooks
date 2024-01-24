@@ -3,6 +3,7 @@ import ClassCounter from './components/ClassCounter'
 import HookCounter from './components/HookCounter'
 
 import './globals.css'
+import HookCounterTwo from './components/HookCounterTwo'
 
 function App() {
   return (
@@ -27,6 +28,12 @@ function App() {
         </p>
         <p><strong>"Only Call Hooks from React Functions"</strong></p>
         <p>Call them from within React functional components and not just any regular JavaScript function.</p>
+      </div>
+
+      <div className='card'>
+        <h1>🎈 useState with previous state</h1>
+        
+        <HookCounterTwo />
       </div>
     </>
   )
