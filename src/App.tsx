@@ -4,6 +4,7 @@ import HookCounter from './components/HookCounter'
 import './globals.css'
 import HookCounterTwo from './components/HookCounterTwo'
 import HookCounterThree from './components/HookCounterThree'
+import HookCounterFour from './components/HookCounterFour'
 
 function App() {
   return (
@@ -22,12 +23,18 @@ function App() {
         <hr></hr>
 
         <h2>📐 Rules of Hooks</h2>
-        <p><strong>"Only Call Hooks at the Top Level"</strong></p>
-        <p>
-          Don't call Hooks inside loops, conditions, or nested functions.
-        </p>
-        <p><strong>"Only Call Hooks from React Functions"</strong></p>
-        <p>Call them from within React functional components and not just any regular JavaScript function.</p>
+        <ul>
+          <li>
+            <p><strong>"Only Call Hooks at the Top Level"</strong></p>
+            <p>
+              Don't call Hooks inside loops, conditions, or nested functions.
+            </p>
+          </li>
+          <li>
+            <p><strong>"Only Call Hooks from React Functions"</strong></p>
+            <p>Call them from within React functional components and not just any regular JavaScript function.</p>
+          </li>
+        </ul>
       </div>
 
       <div className='card'>
@@ -40,6 +47,37 @@ function App() {
         <h1>📦 useState with object</h1>
 
         <HookCounterThree />
+      </div>
+
+      <div className='card'>
+        <h1>🎹 useState with array</h1>
+
+        <HookCounterFour />
+      </div>
+
+      <div className='card'>
+        <h1 className='text-rainbow'>⭐ Summary - useState</h1>
+
+        <ul>
+          <li>
+            The useState hook lets you add state to functional components.
+          </li>
+          <li>In classes, the state is always an object.</li>
+          <li>With an useState hook, the state doesn't have to be an object.</li>
+          <li>The useState hook returns an array with 2 elements.</li>
+          <li>
+            The first element is the current value of the state, and the second
+            element is a state setter function.
+          </li>
+          <li>
+            New state value depends on the previous state value? You can pass a
+            function to the setter function.
+          </li>
+          <li>
+            When dealing with objects or arrays, always make sure to spread your
+            state variable and then call the setter function.
+          </li>
+        </ul>
       </div>
     </>
   )

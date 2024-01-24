@@ -25,6 +25,10 @@ hr {
   border-bottom: 1px solid var(--color-fade);
 }
 
+li {
+  margin-bottom: 10px;
+}
+
 .card {
   margin: 24px;
   padding: 24px;
@@ -46,4 +50,21 @@ hr {
 
 .mt-1 {
   margin-top: 10px;
+}
+
+@keyframes rainbowAnimation {
+  0% { 
+    background-position: 200%;
+  }
+  100% { 
+    background-position: 0%;
+  }
+}
+
+.text-rainbow {
+  background: linear-gradient(90deg, violet, indigo, blue, green, yellow, orange, red);
+  background-size: 200%;
+  background-clip: text;
+  color: transparent;
+  animation: rainbowAnimation 2s linear infinite;
 }
