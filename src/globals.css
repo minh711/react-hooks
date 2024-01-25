@@ -71,6 +71,7 @@ input {
 
 .gap-1 {
   column-gap: 10px;
+  row-gap: 10px;
 }
 
 .mt-1 {

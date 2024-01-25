@@ -5,6 +5,7 @@ import './globals.css'
 import HookCounterTwo from './components/HookCounterTwo'
 import HookCounterThree from './components/HookCounterThree'
 import HookCounterFour from './components/HookCounterFour'
+import HookCounterOne from './components/HookCounterOne'
 
 function App() {
   return (
@@ -88,6 +89,26 @@ function App() {
           </li>
           <li>
             It is a close replacement for <strong>componentDidMount</strong>, <strong>componentDidUpdate</strong> and <strong>componentWillUnmount</strong>.
+          </li>
+        </ul>
+      </div>
+
+      <div className='card'>
+        <h1>🚙 useEffect after render</h1>
+
+        <HookCounterOne />
+      </div>
+
+      <div className='card'>
+        <h1>💣 <span className='text-rainbow'>Explanation</span></h1>
+        <ul>
+          <li>
+            When we specify useEffect, we are basically requesting React to
+            execute the function that is passed as an argument every time the
+            component renders.
+          </li>
+          <li>
+            useEffect runs after every render of the component.
           </li>
         </ul>
       </div>
