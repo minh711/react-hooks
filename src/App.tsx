@@ -6,6 +6,7 @@ import UseStateArray from './components/UseStateArray'
 import UseEffectCounter from './components/UseEffectCounter'
 import UseEffectConditional from './components/UseEffectConditional'
 import './globals.css'
+import UseEffectOnlyOnce from './components/UseEffectOnlyOnce'
 
 function App() {
   return (
@@ -87,6 +88,11 @@ function App() {
       <div className='card'>
         <h1>❔ useEffect with condition</h1>
         <UseEffectConditional />
+      </div>
+
+      <div className='card'>
+        <h1>🥇 useEffect only once</h1>
+        <UseEffectOnlyOnce />
       </div>
     </>
   )
