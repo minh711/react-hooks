@@ -29,6 +29,31 @@ li {
   margin-bottom: 10px;
 }
 
+
+button {
+  color: #fff;
+  background: var(--color-fade);
+  border: 0;
+  outline: 0;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  background: var(--color-fade-light);
+}
+button:active {
+  background: var(--color-fade);
+}
+
+input {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--color-fade);
+  outline: 0;
+}
+
 .card {
   margin: 24px;
   padding: 24px;
@@ -62,7 +87,7 @@ li {
 }
 
 .text-rainbow {
-  background: linear-gradient(90deg, violet, indigo, blue, green, yellow, orange, red);
+  background: linear-gradient(90deg, violet, indigo, blue, violet);
   background-size: 200%;
   background-clip: text;
   color: transparent;
