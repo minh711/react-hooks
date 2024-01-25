@@ -19,10 +19,10 @@ function App() {
 
         <h3>useState hook Counter</h3>
         <HookCounter />
+      </div>
 
-        <hr></hr>
-
-        <h2>📐 Rules of Hooks</h2>
+      <div className='card'>
+        <h1>📐 <span className='text-rainbow'>Rules of Hooks</span></h1>
         <ul>
           <li>
             <p><strong>"Only Call Hooks at the Top Level"</strong></p>
@@ -56,7 +56,7 @@ function App() {
       </div>
 
       <div className='card'>
-        <h1 className='text-rainbow'>⭐ Summary - useState</h1>
+        <h1>⭐ <span className='text-rainbow'>Summary - useState</span></h1>
 
         <ul>
           <li>
@@ -76,6 +76,18 @@ function App() {
           <li>
             When dealing with objects or arrays, always make sure to spread your
             state variable and then call the setter function.
+          </li>
+        </ul>
+      </div>
+
+      <div className='card'>
+        <h1>💥 <span className='text-rainbow'>useEffect</span></h1>
+        <ul>
+          <li>
+            The Effect Hook lets you perform <strong>side effects</strong> in <strong>functional components</strong>.
+          </li>
+          <li>
+            It is a close replacement for <strong>componentDidMount</strong>, <strong>componentDidUpdate</strong> and <strong>componentWillUnmount</strong>.
           </li>
         </ul>
       </div>
