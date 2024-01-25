@@ -5,7 +5,7 @@ interface Item {
   value: number;
 }
 
-const HookCounterFour = () => {
+const UseStateArray = () => {
   const [items, setItems] = useState<Item[]>([]);
 
   const addItem = () => {
@@ -27,4 +27,4 @@ const HookCounterFour = () => {
   )
 }
 
-export default HookCounterFour
+export default UseStateArray

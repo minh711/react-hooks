@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-const HookCounterOne = () => {
+const UseEffectCounter = () => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -14,4 +14,4 @@ const HookCounterOne = () => {
   )
 }
 
-export default HookCounterOne
+export default UseEffectCounter

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function HookCounterTwo() {
+function UseStatePreviousState() {
   const initialCount = 0;
   const [count, setCount] = useState(initialCount);
 
@@ -28,4 +28,4 @@ function HookCounterTwo() {
   )
 }
 
-export default HookCounterTwo
+export default UseStatePreviousState
