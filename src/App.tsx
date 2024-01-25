@@ -4,6 +4,7 @@ import UseStatePreviousState from './components/UseStatePreviousState'
 import UseStateWithObject from './components/UseStateWithObject'
 import UseStateArray from './components/UseStateArray'
 import UseEffectCounter from './components/UseEffectCounter'
+import UseEffectConditional from './components/UseEffectConditional'
 import './globals.css'
 
 function App() {
@@ -81,6 +82,11 @@ function App() {
           <li> When we specify useEffect, we are basically requesting React to execute the function that is passed as an argument every time the component renders. </li>
           <li> useEffect runs after every render of the component. </li>
         </ul>
+      </div>
+
+      <div className='card'>
+        <h1>❔ useEffect with condition</h1>
+        <UseEffectConditional />
       </div>
     </>
   )
